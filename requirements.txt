@@ -1,4 +1,5 @@
 -c constraints.txt
 
 Django
+psycopg2-binary
 structlog
