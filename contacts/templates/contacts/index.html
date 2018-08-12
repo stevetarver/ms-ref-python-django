@@ -1,0 +1,14 @@
+{% extends 'contacts/layout.html' %}
+
+{% block content %}
+
+<ul class="collection">
+  {% for contact in contacts %}
+  <li class="collection-item"><a href="/contacts/details/{{contact.id}}">
+    {{contact.firstName}}
+    {{contact.lastName}}
+  </a></li>
+  {% endfor %}
+</ul>
+
+{% endblock %}
